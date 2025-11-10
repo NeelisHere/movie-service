@@ -4,8 +4,7 @@ env:
   variables:
     IMAGE_NAME: "movie-service"
     DOCKERHUB_USERNAME: "npaulhere"
-  secrets-manager:
-    DOCKERHUB_PASSWORD: "arn:aws:secretsmanager:us-east-1:440744257191:secret:DOCKER_PASSWORD-o4YAlV:DOCKER_PASSWORD"
+    DOCKERHUB_PASSWORD: "DOCKERHUB_PASSWORD"
 
 phases:
   install:
