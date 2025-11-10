@@ -22,7 +22,7 @@ phases:
 
       - echo "Fetching short commit hash..."
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c1-7)
-      - "IMAGE_TAG=${COMMIT_HASH:-latest}"
+      - 'IMAGE_TAG=${COMMIT_HASH:-latest}'
       - echo "Using image tag: $IMAGE_TAG"
 
   build:
