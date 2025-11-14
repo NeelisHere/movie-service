@@ -21,7 +21,7 @@ import java.util.List;
 public class MovieController {
     private final MovieService movieService;
 
-    @GetMapping(value = {"", "/"}, produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     @Operation(summary = "Get all movies")
     public ResponseEntity<List<Movie>> getAllMovies() {
         return ResponseEntity.ok(movieService.getAllMovies());
@@ -33,7 +33,7 @@ public class MovieController {
         return ResponseEntity.ok(movieService.getMoviesByGenre(genre));
     }
 
-    @PostMapping(value = {"", "/"},
+    @PostMapping(
         consumes = MediaType.APPLICATION_JSON_VALUE,
         produces = MediaType.APPLICATION_JSON_VALUE
     )

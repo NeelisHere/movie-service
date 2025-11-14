@@ -1,6 +1,6 @@
 package com.netflux.movie_service.entity;
 
 public enum Genre {
-    ACTION, CRIME, COMEDY, DRAMA
+    ACTION, CRIME, COMEDY, HORROR, ROMANCE
 }
 
